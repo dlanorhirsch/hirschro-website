@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/figma-designs.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <title>Design Components</title>
+  <style>
+    body {
+      font-size: 1em;
+      padding: 0;
+      background: #2b2f3c;
+      color: white;
+    }
+    header, .inner {
+      display: block;
+      padding: 2.5em 1.5em 0.5em 1.5em;
+      width: 100%;
+      margin: 0;
+    }
+    /* .wrapper {
+      display: block;
+    } */
+    .grid-container {
+      display: flex;
+      grid-gap: 20px;
+      justify-items: center;
+      align-items: center;
+      position: relative;
+      width: 80%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+
+    }
+    .grid {
+      box-sizing: border-box;
+      display: grid;
+      border: 1px solid rgb(255 255 255 / 30%);
+      border-radius: 20px;
+      width: 300px;
+      height: 300px;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      background-color: rgba(7, 7, 7, 0.38);
+
+      
+    }
+    footer {
+      text-align: center;
+      padding: 2em 0 2em 0;
+      color: rgb(206, 206, 206);
+    }
+
+  </style>
+</head>
+<body>
+  <div id="page-wrapper">
+
+    <!-- Header -->
+      <header id="header" class="alt" style="background: #4A4D5A">
+        
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+      </header>
+
+    <!-- Menu -->
+      <nav id="menu">
+        <div class="inner">
+          <h2>Menu</h2>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="generic.html">Project Details</a></li>
+            <li><a href="elements.html">About Me</a></li>
+            <!-- <li><a href="#">Log In</a></li>
+            <li><a href="#">Sign Up</a></li> -->
+          </ul>
+          <a href="#" class="close">Close</a>
+        </div>
+      </nav>
+      <section id="wrapper">
+        <header>
+          <div class="inner">
+            <h2>Design Components/Grocery List App</h2>
+            <p>The following elements were created with Figma Design Tools and incorporated into this project.
+          </div>
+        </header>
+
+
+    <div class="grid-container">
+      <div id="swiss-cheese" class="grid">
+        <img src="images/fig-design-elements/Swiss-cheese-sm.png"/>
+        <div class="label" class="grid">Swiss Cheese</div>
+      </div>
+      <div id="fish" class="grid">
+        <img src="images/fig-design-elements/Fish-right-sm.png" width="85%">
+        <div class="label">Trout Small (right)</div>
+      </div>
+      <div id="fish" class="grid">
+        <img src="images/fig-design-elements/Fish-left-sm.png" width="85%">
+        <div class="label">Trout Large (left)</div>
+      </div>
+      <div id="orange" class="grid">
+        <img src="images/fig-design-elements/Orange-sm.png"width="130%">
+        <div class="label">Orange</div>
+      </div>
+      <div id="celery" class="grid">
+        <img src="images/fig-design-elements/Celery-left-sm.png">
+        <div class="label">Celery</div>
+      </div>
+      <div id="blueberries" class="grid">
+        <img src="images/fig-design-elements/Blueberries-right-sm.png">
+        <div class="label">Blueberries</div>
+      </div>
+      <div id="tomato" class="grid">
+        <img src="images/fig-design-elements/Tomato-left-sm.png">
+        <div class="label">Tomato</div>
+      </div>
+      <div id="carrots-bunch" class="grid">
+        <img src="images/fig-design-elements/Carrots-bunch-sm.png"width="130%">
+        <div class="label">Carrots (bunch)</div>
+      </div>
+      <div id="french-bread" class="grid">
+        <img src="images/fig-design-elements/French-bread-med.png" width="85%">
+        <div class="label" class="grid">French bread</div>
+      </div>
+      <div id="bananas" class="grid">
+        <img src="images/fig-design-elements/Bananas-right-med.png" width="85%">
+        <div class="label" class="grid">Bananas</div>
+      </div>
+      <div id="rasberry" class="grid">
+        <img src="images/fig-design-elements/Raspberry-right-med.png">
+        <div class="label" class="grid"
+        >Raspberry</div>
+      </div>
+      <div id="eggplant" class="grid">
+        <img src="images/fig-design-elements/Eggplant-med.png" width="45%">
+        <div class="label" class="grid"
+        >Eggplant</div>
+      </div>
+      <div id="watermelon" class="grid">
+        <img src="images/fig-design-elements/Watermelon-med.png" width="80%">
+        <div class="label" class="grid"
+        >Watermelon</div>
+      </div>
+      <div id="spag-sauce" class="grid">
+        <img src="images/fig-design-elements/spaghetti-sauce-med.png" width="70%">
+        <div class="label" class="grid"
+        >Spaghetti Sauce</div>
+      </div>
+      <div id="green-beans" class="grid">
+        <img src="images/fig-design-elements/green-beans-med.png" width="70%">
+        <div class="label" class="grid"
+        >Green Beans</div>
+      </div>
+      <div id="pork" class="grid">
+        <img src="images/fig-design-elements/Pork-med.png" width="80%">
+        <div class="label" class="grid"
+        >Pork</div>
+      </div>
+    <div id="eggs-dozen" class="grid">
+      <img src="images/fig-design-elements/Eggs-med.png" width="85%">
+      <div class="label" class="grid">Eggs (dozen)</div>
+    </div>
+      <div id="eggs-dozen" class="grid">
+        <img src="images/fig-design-elements/Beets-med-pair.png" width="80%">
+        <div class="label" class="grid">Beets-Pair</div>
+      </div>
+      <div id="flour-sack" class="grid">
+        <img src="images/fig-design-elements/Flour-sack-med.png" width="70%">
+        <div class="label" class="grid">Flour Sack</div>
+      </div>
+      <div id="acorn-squash" class="grid">
+        <img src="images/fig-design-elements/Acorn-squash-sm.png" width="70%">
+        <div class="label" class="grid">Acorn squash</div>
+      </div>
+      <div id="trash-can" class="grid">
+        <img src="images/fig-design-elements/Trash-can.png" width="85%">
+        <div class="label" class="grid">Trash Can</div>
+      </div>
+      <div id="big-cart" class="grid">
+        <img src="images/fig-design-elements/Big-Cart.png">
+        <div class="label" class="grid">Big Carts</div>
+      </div>
+      <div id="dog-bowl" class="grid">
+        <img src="images/fig-design-elements/Dog-bowl.png" width="150%" >
+        <div class="label" class="grid">Dog Bowl</div>
+      </div>
+      <div id="med-cart" class="grid">
+        <img src="images/fig-design-elements/Med-cart.png">
+        <div class="label" class="grid">Cart-medium</div>
+      </div>
+      <div id="cart-wallpaper" class="grid">
+        <img src="images/fig-design-elements/Carts-wallpaper.png" width="85%">
+        <div class="label" class="grid">Cart Wallpaper</div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div id="copyright">
+        Copyright &copy;
+        <span>
+          <script>
+            document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()));
+          </script>
+        </span>
+          Hirschro V:1.1
+      </div>
+    </footer>
+
+
+
+
+  		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+</body>
+</html>
