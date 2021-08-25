@@ -3391,7 +3391,7 @@ input, select, textarea {
     .hirschro, span {
       margin: 0 0 50px 0;
     }
- 		#banner .logo{
+ 		#banner .logo .quote1 {
       -moz-transition: opacity 2s ease, -moz-transform 1s ease;
 			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
 			-ms-transition: opacity 2s ease, -ms-transform 1s ease;
@@ -3465,7 +3465,7 @@ input, select, textarea {
 			line-height: 2;
 			text-transform: uppercase;
 		}
-    #banner .quote1 {
+    #banner {
       -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease, -moz-filter 0.25s ease;
 			-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease, -webkit-filter 0.25s ease;
 			-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease, -ms-filter 0.25s ease;
@@ -4079,7 +4079,7 @@ input, select, textarea {
 				border-left: solid 2px rgba(255, 255, 255, 0.125);
 				color: rgba(255, 255, 255, 0.55);
 				display: inline-block;
-				font-size: 1em;
+				font-size: 1.2em;
 				line-height: 1;
 				margin-left: 1em;
 				padding: 0;
