@@ -41,20 +41,27 @@
       display: grid;
       border: 1px solid rgb(255 255 255 / 30%);
       border-radius: 20px;
-      width: 300px;
-      height: 300px;
+      width: 350px;
+      height: 350px;
       justify-content: center;
       justify-items: center;
       align-content: center;
       background-color: rgba(7, 7, 7, 0.38);
     }
+    .label {
+      font-size: .8em;
+      padding-top: 1em;
+    }
+    img {
+      
+      transition: all .2s ease-in-out;
+    }
     img:hover {
       position: relative;
-      width: 170%;
+      width: 120%;
       height: auto;
       display: block;
-      transition: width 1s, height 1s;
-    
+      transform: scale (1.5);
     }
     footer {
       text-align: center;
@@ -100,45 +107,83 @@
 
     <div class="grid-container">
       <div id="swiss-cheese" class="grid">
-        <img src="images/fig-design-elements/Swiss-cheese-sm.png"/>
-        <div class="label" class="grid">Swiss Cheese</div>
+        <img src="images/fig-design-elements/Swiss-cheese-sm.png" width="85%"/>
+        <div class="label" class="grid">Swiss Cheese 
+        <div>File Type: PNG</div>
+        <div>Size: 152px X 124px</div>
       </div>
-      <div id="fish" class="grid">
+      </div>
+      <div id="fish-right-sm" class="grid">
         <img src="images/fig-design-elements/Fish-right-sm.png" width="85%">
-        <div class="label">Trout Small (right)</div>
+        <div class="label">Trout Small (right)
+        <div>File Type: PNG</div>
+        <div>Size: 314px X 144px</div>
       </div>
-      <div id="fish" class="grid">
+      </div>
+      <div id="fish-left-sm" class="grid">
         <img src="images/fig-design-elements/Fish-left-sm.png" width="85%">
-        <div class="label">Trout Large (left)</div>
+        <div class="label">Trout Fat (left)
+        <div>File Type: PNG</div>
+        <div>Size: 316px X 144px</div>
       </div>
-      <div id="orange" class="grid">
-        <img src="images/fig-design-elements/Orange-sm.png"width="130%">
-        <div class="label">Orange</div>
+      </div>
+      <div id="orange-md" class="grid">
+        <img src="images/fig-design-elements/Orange-med.png" width="75%">
+        <div class="label">Orange-Med
+        <div>File Type: PNG</div>
+        <div>Size: 200px X 227px </div>
+      </div>
       </div>
       <div id="celery" class="grid">
-        <img src="images/fig-design-elements/Celery-left-sm.png"/>
-        <div class="label">Celery</div>
+        <img src="images/fig-design-elements/Celery-left-sm.png" width="100%"/>
+        <div class="label">Celery
+        <div>File Type: PNG</div>
+        <div>Size: 200px X 216px</div>
+      </div>
       </div>
       <div id="blueberries" class="grid">
-        <img src="images/fig-design-elements/Blueberries-right-sm.png">
-        <div class="label">Blueberries</div>
+        <img src="images/fig-design-elements/Blueberries-right-med.png" width="100%">
+        <div class="label">Blueberries
+        <div>File Type: PNG</div>
+        <div>Size: 230px X 197px</div>
       </div>
-      <div id="tomato" class="grid">
-        <img src="images/fig-design-elements/Tomato-left-sm.png">
-        <div class="label">Tomato</div>
       </div>
-      <div id="carrots-bunch" class="grid">
-        <img src="images/fig-design-elements/Carrots-bunch-sm.png"width="130%">
-        <div class="label">Carrots (bunch)</div>
+      <div id="tomato-sm" class="grid">
+        <img src="images/fig-design-elements/Tomatos-small.png" width="80%">
+        <div class="label">Tomato
+        <div>File Type: PNG</div>
+        <div>Size: 200px X 216px/each</div>
+      </div>
+      </div>
+      <div id="carrots-bunch-med" class="grid">
+        <img src="images/fig-design-elements/Carrots-bunch-med.png"width="100%">
+        <div class="label">Carrots (bunch)
+        <div>File Type: PNG</div>
+        <div>Size: 190px X 233px</div>
+        </div>
+      </div>
+      <div id="carrots-indiv-med" class="grid">
+        <img src="images/fig-design-elements/Carrots-med-single.png"width="100%">
+        <div class="label">Carrots Singles
+        <div>File Type: PNG</div>
+        <div>Size: 200px X 86px/each</div>
+        </div>
       </div>
       <div id="french-bread" class="grid">
-        <img src="images/fig-design-elements/French-bread-med.png" width="85%">
-        <div class="label" class="grid">French bread</div>
+        <img src="images/fig-design-elements/French-bread-med.png" width="100%">
+          <div class="label" class="grid">French bread
+          <div>File Type: PNG</div>
+          <div>Size: 300px X 95px/each</div>
+        </div>
       </div>
       <div id="bananas" class="grid">
-        <img src="images/fig-design-elements/Bananas-right-med.png" width="85%">
-        <div class="label" class="grid">Bananas</div>
+        <img src="images/fig-design-elements/Bananas-Bunch-med.png" width="100%" style="margin-top: -50px">
+        <div class="label" class="grid" style="margin-top: -30px">Bananas/Bunch
+          <div>File Type: PNG</div>
+          <div>Size: 300px X 95px/each</div>
+        </div>
       </div>
+      <!-- image size: 297x282 -->
       <div id="rasberry" class="grid">
         <img src="images/fig-design-elements/Raspberry-right-med.png">
         <div class="label" class="grid"
@@ -173,9 +218,10 @@
       <img src="images/fig-design-elements/Eggs-med.png" width="85%">
       <div class="label" class="grid">Eggs (dozen)</div>
     </div>
-      <div id="eggs-dozen" class="grid">
+      <div id="beets-med-pair" class="grid">
         <img src="images/fig-design-elements/Beets-med-pair.png" width="80%">
         <div class="label" class="grid">Beets-Pair</div>
+        <!-- image size: 515x591 -->
       </div>
       <div id="flour-sack" class="grid">
         <img src="images/fig-design-elements/Flour-sack-med.png" width="70%">
@@ -184,6 +230,7 @@
       <div id="acorn-squash" class="grid">
         <img src="images/fig-design-elements/Acorn-squash-sm.png" width="70%">
         <div class="label" class="grid">Acorn squash</div>
+        <!-- image size: 227x244 -->
       </div>
       <div id="trash-can" class="grid">
         <img src="images/fig-design-elements/Trash-can.png" width="85%">
