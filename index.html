@@ -9,8 +9,31 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <title>hirschro homepage</title>
+  <style>
+    .fa-github {
+      display: inline-block;
+      text-decoration: none;
+    }
+    .para-modify {
+      line-height: 1.6em;
+      letter-spacing: 1.4px;
+    }
+    .link-container {
+      display: flex;
+    }
+    .link-container .page-link {
+      flex: 1;
+    }
+    .link-container .fab {
+      flex: 2;
+      margin: 0 .8em 0 0;
+    }
+
+
+  </style>
 	</head>
 	<body class="is-preload">
 
@@ -31,7 +54,7 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-								<li><a href="project-details.html">Project Details</a></li>
+								<!-- <li><a href="project-details.html">Project Details</a></li> -->
 								<li><a href="bio-page.html">About Me</a></li>
                   
                 <!-- Not needed yet -->
@@ -50,13 +73,18 @@
                   <img src="images/Group-25.png" style="width: 57%"/>
                 </span>
             	</div>
-              <p 
-                style="color: #E6E8FF;
-                       font-weight: 600;
-                       letter-spacing: .4em">Responsive front end web design
+              <p class="intro-quote" style="color: #E6E8FF;
+              font-weight: 600;
+              letter-spacing: .3em;">
+             Responsive front end web design
               </p>
-              <p style="font-size: 75%; color: #E6E8FF; ">"Creativity is intelligence having fun." -- Albert Einstein
+              <p style="font-size: 90%; color: #E6E8FF; margin-top: -2.2em; 
+              font-weight: bold; margin-top: 1em;">"Creativity is intelligence having fun."
               </p>
+              <p style="font-size: 90%; 
+                        color: #E6E8FF; 
+                        margin-top: -2.2em; 
+                        font-weight: bold"> -- Albert Einstein</p>
               
 						</div>
 					</section>
@@ -72,12 +100,15 @@
                   <!-- <a href="#" class="image-alt"><img src="images/GrocListMobView.png" width="80%" height="50%"></a> -->
 									<div class="content">
 										<h2 class="major">Grocery List</h2>
-										<p style="
-                        font-size: 1.1em;
-                        letter-spacing: 1px;">A responsive mobile-friendly app with a bit of CSS animation to make grocery shopping lists fun and easy to complete. Graphic design elements created with <a href="https://www.figma.com/design/">Figma</a> design tools, and can be seen here: <a href="figma-design-components.html">Design Elements</a>.
-										</p>
+										<p class="para-modify">A responsive mobile-friendly app with a bit of CSS animation to make grocery shopping lists fun and easy to complete. Graphic design elements created with <a href="https://www.figma.com/design/">Figma</a> design tools: <a href="figma-design-components.html">Design Elements</a>.
+                    </p>
+
                     <a href="https://hirschro.study-groups.org/webpage-study-group/investigations/grocList/groceryListV-13.html" target="_blank" rel="noopener noreferrer" class="special">View app</a>
-                    <!-- link to grocList app -->
+
+                    <a href="https://github.com/study-groups/webpage-study-group/tree/main/investigations/grocList" target="_blank" rel="noopener noreferrer">
+                      
+                    <i class="fab fa-github fa-2x"></i>
+                    </a>
 									</div>
 								</div>
 							</section>
@@ -88,8 +119,14 @@
                   <a href="#" class="image"><img src="images/Color-charts-icon.png" alt=""/></a>
 									<div class="content">
 										<h2 class="major">Color Charts</h2>
-										<p>Initially an exploration of the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model">DOM</a>, this project became a study of the interface between technology and color paradigms. Various color theories and categorizations of color are explained, including RGB, HEX, HSL, and Munsell. Further development of this page is underway: a React app with functionality added.</p>
+                    
+										<p class="para-modify">What began as an exploration of the<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"> DOM</a> this project evolved to become a study of technology and color paradigm integration. Various color theories color are explained, including RGB, HEX, HSL, and Munsell. Further development is underway: a React app with added functionality.</p>
+
 										<a href="https://hirschro.study-groups.org/color-charts/public/" class="special" target="_blank" rel="noopener noreferrer">View page</a>
+
+                    <a class="github-icon" href="https://github.com/hirschro/color-charts" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+
+                    
 									</div>
 								</div>
 							</section>
@@ -100,8 +137,11 @@
                   <a href="#" class="image"><img src="/images/ReactExsIcon.svg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">React-Examples</h2>
-										<p>A project designed to explore React Components. Completed in preparation for future versions of Color Charts.</p>
+										<p class="para-modify">A project designed to explore React Components. Completed in preparation for Color Charts and future developments.</p>
+
 										<a href="/project-details.html#reactExamples" class="special">View page</a>
+
+                    <a class="github-icon" href="https://github.com/hirschro/react-examples" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
 
 									</div>
 									
@@ -117,29 +157,49 @@
 										<article>
 											<a href="#" class="image"><img src="images/ClientDF.png" style="border: 1px solid white"/></a>
 											<h3 class="major">Client Data Collection Tool</h3>
-											<p>A tool designed to capture and hold temporary browswer data in localStorage - this project was an exploration in using and understanding localStorage. HTML, CSS and standard Javascript were utilized.</p>
-											<a href="https://hirschro.study-groups.org/webpage-study-group/investigations/clientDataCollection/test13.html" class="special" target="_blank" rel="noopener noreferrer">View Project</a>
+
+											<p class="para-modify">A tool designed to capture and hold temporary browswer data in localStorage - this project was an exploration in using and understanding localStorage. HTML, CSS and standard Javascript were utilized.</p>
+
+                      <div class="link-container">
+                        <a href="https://hirschro.study-groups.org/webpage-study-group/investigations/clientDataCollection/test13.html" class="special page-link" target="_blank" rel="noopener noreferrer">View Project
+                                           
+                        <a class="github-icon" href="https://github.com/study-groups/webpage-study-group/blob/main/investigations/clientDataCollection/test13.html" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                        </a>
+                      </div>
+
+
                   	</article>
 										<article>
 											<a href="#" class="image"><img src="images/SG-inset.png"style="border: 1px solid white" alt=""/></a>
 											<h3 class="major">Study-Groups</h3>
-											<p>Home page web design for Study-Groups.org. A site under development targetting neophyte and experts alike in a collaborative learning environment.</p>
-                      <p>Accompanying <a href="https://study-groups.org/styleguide.html" target="_blank" rel="noopener noreferrer">stylesheet</a> available.</p>
+											<p class="para-modify">Home page web design for Study-Groups.org. A site under development targetting neophyte and experts alike in a collaborative learning environment.</p>
+                      <p class="para-modify">Accompanying <a href="https://study-groups.org/styleguide.html" target="_blank" rel="noopener noreferrer">stylesheet</a> available.</p>
                       
-											<a href="https://study-groups.org/" class="special" target="_blank" rel="noopener noreferrer">View Page</a>
+                      <div class="link-container">
+											  <a href="https://study-groups.org/" class="special page-link" target="_blank" rel="noopener noreferrer">View Page</a>
+
+                        <a class="github-icon" href="https://github.com/study-groups/webpage-study-group/blob/main/investigations/clientDataCollection/test13.html" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                      </div>
+
 										</article>
                     <article>
 											<a href="#" class="image"><img src="images/ls-explore.jpg"style="border: 1px solid white" alt=""/></a>
 											<h3 class="major">Investigation: Javascript Edit Functionality</h3>
-											<p>The goal of this simple project was to isolate the javascript code necessary to create edit functionality of localStorage items used in other projects.</p>
-											<a href="https://hirschro.study-groups.org/webpage-study-group/investigations/localStorPrac/lsap.html" class="special" target="_blank" rel="noopener noreferrer">View Page</a>
-                      <p>(Provide link to gitHub repo for this code.)</p>
+
+											<p class="para-modify">The goal of this simple project was to isolate the javascript code necessary to create edit functionality of localStorage items used in other projects.</p>
+
+                      <div class="link-container">
+											  <a href="https://study-groups.org/" class="special page-link" target="_blank" rel="noopener noreferrer">View Project</a>
+
+                        <a class="github-icon" href="https://github.com/study-groups/webpage-study-group/tree/main/investigations/localStorPrac" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+                      </div>
+                      
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/Morning Glory Disp V-2 Master.jpg"style="border: 1px solid white" alt="" /></a>
-											<h3 class="major">Place holder</h3>
-											<p>Dispersion Effect: This image was created using a dispersion effect with Photoshop. It was applied to a photo of a Morning Glory.</p>
-                      <p>Follow the prompt below to learn more about how to create this effect.</p>
+											<h3 class="major">Image Manipulation (place holder)</h3>
+											<p class="para-modify">Dispersion Effect: This image was created using a dispersion effect with Photoshop. It was applied to a photo of a Morning Glory.</p>
+                      <p class="para-modify">Follow the prompt below to learn more about how to create this effect.</p>
                     
 											<a href="https://www.youtube.com/watch?v=4xgOWWfurpU"target="_blank" rel="noopener noreferrer"class="special">Learn more</a>
 										</article>
@@ -158,7 +218,7 @@
 						<div class="inner">
 							<h2 class="major">Get in touch</h2>
 							<p>I'd love to hear from you.  Feedback, questions, suggestions...all are welcome.</p>
-							<form method="post" action="#">
+							<!-- <form method="post" action="#">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
@@ -176,10 +236,10 @@
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
-							</form>
+							</form> -->
 							<ul class="contact">
 								<li class="icon solid fa-home">
-									Hirscho Inc<br/>
+									Hirscho<br/>
 									146 Carpenter St #2<br/>
                   Providence, RI 02903<br/>
 								</li>
@@ -187,7 +247,7 @@
 								<li class="icon solid fa-envelope"><a href="#">info@hirschro.com</a></li>
 								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
 								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
+								<!-- <li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li> -->
 							</ul>
               <div id="copyright" class="copyright">
                 Copyright&copy;
