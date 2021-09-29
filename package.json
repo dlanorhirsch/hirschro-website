@@ -1,0 +1,19 @@
+{
+  "name": "hirschro-website",
+  "version": "1.0.0",
+  "description": "Ron Hirschauer's home webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hirschro/hirschro-website.git"
+  },
+  "author": "Ron Hirschauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hirschro/hirschro-website/issues"
+  },
+  "homepage": "https://github.com/hirschro/hirschro-website#readme"
+}
