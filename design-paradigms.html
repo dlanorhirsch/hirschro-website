@@ -10,22 +10,74 @@
   <title>Webpage Design Paradigms</title>
   <style>
     body {
-      background: #4C5C96;
       font-family: Raleway, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
     }
-
-    #image-container {
-     
-      text-align: center;
+    /* Section A */
+    .slantedDivA {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: #2E3140;
     }
-    h1, h2, h3 {
-      color: #fff;
-      text-align: center;
+    .slantedDivA:after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: bottom right;
+      transform: skewY(-6deg);
+    }
+    .slantedDivB {
+      display: flex;
+      /* position: relative; */
+      width: 100%;
+      height: auto;
+      background: #4C5C96;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      transform-origin: bottom right;
+    }
+    .slantedDivB:after {
+      width: 100%;
+      height: auto;
+      content: '';
+      background: inherit;
+      /* top: 0;
+      bottom: 0;
+      left: 0; */
       
+      transform: skewY(4deg);
+      z-index: -1;
     }
-  
+    .slantedDivC {
+      display: flex;
+      flex-wrap: wrap;
+      /* position: relative; */
+      width: 100%;
+      height: auto;
+      background: #4c5c96;
+    }
+    .slantedDivC:after {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      content: '';
+      background: inherit;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: bottom right;
+      transform: skewY(4deg);
+      z-index: -1;
+    }
     #hirschro-logo {
       width: 100%;
       height: auto;
@@ -33,78 +85,89 @@
       max-width: 160px;
       margin-right: 3.6em;
     }
-    .flex-container-nav {
-      display: inline-flex;
-      background-color: #2E3140;
-      width: 100%;
-      height: 58px;
-      justify-content: flex-end;
-      align-items: center;
-      align-content: center;
+    .main-title {
+      display: flex;
     }
     .flex-container {
       margin: 5em;
+      max-width: 80%; 
+      flex-wrap: wrap;
     }
-    .design-style-section {
-      background-color: #2E3140;
+    h1, h2, h3 {
+      color: #fff;
+      z-index: 1;
+     }
+    .section-title {
+      text-align: left;
+      margin: 5em 2em 0 2em;
     }
     p {
       color: #fff;
+      font-size: 1.3em;
+      margin: 1em 3em;
     }
   </style>
 </head>
 <body>
-  <nav class="flex-container-nav">
-  <div class="navbar">
-    <a id="hirschro-logo" href="https://hirschro.github.io/hirschro-website/"><img   src="images/hirschro-sm.png" width="99%"></a>
+  <div class="slantedDivA">
+    <nav>
+      <div class="navbar">
+        <a id="hirschro-logo" href="https://hirschro.github.io/hirschro-website/"><img   src="images/hirschro-sm.png" width="99%"></a>
+      </div>
+      <div class="main-title">  
+        <h1> Web Design Examples</h1> 
+        <h2>(Under Construction)</h2>
+      </div>
+    </nav>
   </div>
-</nav>
-<h1> Web Design Examples</h1> 
-<h2>(Under Construction)</h2>
-<div class="flex-container">
-  <!-- Realism -->
-<h1 class="design-style-section" style="color: #4658FA">REALISM</h1>
-<p>Realism is a popular web design style that emphasizes accuracy and realism in the design of a website. This style is often used for websites that are intended to be used as physical products.</p>
-
-<p>Websites that use this style may feature high-quality graphics and photos and may be designed to look like actual websites found on the internet.</p>
-<!-- Brutalism -->
-<h1 class="design-style-section" style="color: #D60D31">BRUTALISM</h1>
+  <!-- End slantedDivA -->
+    <div class="slantedDivB"> 
+      <!-- Realism -->
+      <h1 class="section-title" style="color: 
+      #30c6e7">REALISM</h1>
+      <p>Realism is a popular web design style that emphasizes  accuracy and realism in the    design of a website. This style   is often used for websites that are intended to be used   for   physical products.</p>
+      
+      <p>Websites that use this style may feature high-quality  graphics and photos and may be     designed to look like   actual websites found on the internet.</p>
+    </div>
+  <!-- Brutalism -->
+    <div class="slantedDivC">
+<h1 class="section-title" style="color: #D60D31">BRUTALISM</h1>
 <p>Brutalism is a web design style that is characterized by its raw, industrial look and feel. This type of design is often used for websites that are intended to be powerful and professional, but also tough and unyielding.</p>
 
-<p>This is a popular web design style for artists, web designers who wants to express themselves. Generally, I would recommend businesses to stay away from this style because it introduces too many elements which can confuse visitors.</p>
+<p>This is a popular web design style for artists, web designers who wants to express themselves. Generally, I would recommend businesses to stay away from this style because it introduces too many elements which can confuse visitors.</p> -->
 <!-- Flat Design -->
-<h1 class="design-style-section" style="color: #D09600">FLAT DESIGN</h1>
+<!-- <h1 class="section-title" style="color: #D09600">FLAT DESIGN</h1>
 <p>Flat design is a popular website design style that is often used for minimalist or modern websites. Flat design is typically characterized by a lack of ornamentation and a simplified, modern look.</p>
 
-<p>This style is popular because it is easy to create and can be adapted to a variety of different types of websites.</p>
-
+<p>This style is popular because it is easy to create and can be adapted to a variety of different types of websites.</p> -->
+</div>
 <!-- Freehand Design -->
-<h1 class="design-style-section" style="color: #D900DD">FREEHAND DESIGN</h1>
+<!-- <h1 class="section-title" style="color: #D900DD">FREEHAND DESIGN</h1>
 <p>Freehand web design is a popular web design style that is often used by small businesses because it is easy to create a website with this style. Freehand web design is simple, modern, and easy to modify.</p>
 
-<p>Freehand web design style is a popular and modern web design style. It is characterized by a minimalistic and clean design with a focus on the content. This style is perfect for businesses that want to stand out from the competition.</p>
+<p>Freehand web design style is a popular and modern web design style. It is characterized by a minimalistic and clean design with a focus on the content. This style is perfect for businesses that want to stand out from the competition.</p> -->
 
 <!-- Geometric Design -->
-<h1 class="design-style-section" style="color: #3FD60A">GEOMETRIC DESIGN</h1>
+<!-- <h1 class="section-title" style="color: #3FD60A">GEOMETRIC DESIGN</h1>
 <p>Geometric web design style is a popular web design style that is often used in modern websites. It features clean, simple designs with a focus on geometric shapes and patterns. This style is often used to create a modern and sleek look for your website.</p>
 
-<p>Isometric web design style is a popular choice for websites that want to create a modern and sleek look. This style uses geometric shapes and lines to create a stark, yet sophisticated look.</p>
+<p>Isometric web design style is a popular choice for websites that want to create a modern and sleek look. This style uses geometric shapes and lines to create a stark, yet sophisticated look.</p> -->
 <!-- Typography Design -->
 
-<h1 class="design-style-section" style="color: #CDD021">TYPOGRAPHY</h1>
+<!-- <h1 class="section-title" style="color: #CDD021">TYPOGRAPHY</h1>
 <p>Typography web design style is focused on using Typography as the main element for the website.</p>
 
 <p>Typography in web design is similar to print design but requires certain considerations to ensure legibility on all screen types. Typeface, type size, color, line height, and letter shapes are some of the factors within typography that must be carefully balanced to provide a pleasant reading experience.</p>
   
-<p>The advantage of using typography is that the website loads quicker. However, writing such websites are proven to be difficult.</p>
+<p>The advantage of using typography is that the website loads quicker. However, writing such websites are proven to be difficult.</p> -->
 
 <!-- Minimalism -->
-<h1 class="design-style-section" style="color: #78E7FF">MINAMALISM</h1>
+<!-- <h1 class="section-title" style="color: #78E7FF">MINAMALISM</h1>
 <p>A minimalist web design style is one that focuses on the content of a website and removes any extraneous elements. This can include removing unnecessary graphics, logos, and other elements.</p>
 
 <p>Minimalist web designs are often more aesthetically pleasing and easier to navigate, which can help boost traffic and conversions. It focuses on creating more white-space than necessary.</p>
 
-<p>Minimalist web design requires a higher degree of accuracy, precision and thinking.</p>
+<p>Minimalist web design requires a higher degree of accuracy, precision and thinking.</p> -->
 </div>
 </div>
 </body>
